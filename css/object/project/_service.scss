@@ -1,6 +1,9 @@
 .p-service {
     &__contents {
         margin-top: 80px;
+        @include break($pc) {
+            display: flex;
+        }
         &__img:first-child {
             background: url(/img/service-img01@2x.jpg) center center no-repeat;
         }
@@ -36,6 +39,7 @@
         &__img:hover::after {
             content: '';
             background-color: rgba(23, 23, 23, .3);
+            background-size: 100%;
             position: absolute;
             left: 0;
             right: 0;

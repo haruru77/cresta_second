@@ -5,6 +5,10 @@
     text-align: center;
     &__cards {
         margin-top: 50px;
+        @include break($pc) {
+            margin-top: 80px;
+            display: flex;
+        }
     }
     a {
         margin-top: 80px;

@@ -13,5 +13,8 @@
     }
     a {
         margin-top: 30px;
+        @include break($pc) {
+            margin-top: 40px;
+        }
     }
 }

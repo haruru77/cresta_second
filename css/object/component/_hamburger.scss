@@ -37,4 +37,7 @@
         top: 10px;
         transform: rotate(-45deg);
     }
+    @include break($pc) {
+        display: none;
+    }
 }

@@ -6,4 +6,7 @@
     overflow: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    @include break($pc) {
+        height: 752px;
+    }
 }

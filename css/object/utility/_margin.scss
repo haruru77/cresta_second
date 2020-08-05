@@ -1,3 +1,12 @@
 .u-margin {
     margin: 0 15px;
+    @include break($pc) {
+        margin: 0 120px;
+    }
+}
+
+.u-margin-pc {
+    @include break($pc) {
+        margin: 0 100px 0 100px;
+    }
 }

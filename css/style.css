@@ -110,6 +110,12 @@ body {
   font-size: 0;
 }
 
+@media (min-width: 1025px) {
+  .c-card {
+    margin-right: 20px;
+  }
+}
+
 .c-card img {
   display: inline-block;
   width: 320px;
@@ -160,6 +166,12 @@ body {
   letter-spacing: 0.05em;
 }
 
+@media (min-width: 1025px) {
+  .c-top-ttl__left h3 {
+    font-size: 3.75rem;
+  }
+}
+
 .c-top-ttl__left span {
   margin-left: 30px;
   display: inline-block;
@@ -167,6 +179,12 @@ body {
   width: 90px;
   height: 5px;
   background-color: #282F35;
+}
+
+@media (min-width: 1025px) {
+  .c-top-ttl__left span {
+    width: 200px;
+  }
 }
 
 .c-top-ttl__right {
@@ -184,6 +202,12 @@ body {
   letter-spacing: 0.1em;
 }
 
+@media (min-width: 1025px) {
+  .c-top-ttl__right h3 {
+    font-size: 3.75rem;
+  }
+}
+
 .c-top-ttl__right span {
   margin-left: 30px;
   display: inline-block;
@@ -191,6 +215,12 @@ body {
   width: 100px;
   height: 5px;
   background-color: #FFFFFF;
+}
+
+@media (min-width: 1025px) {
+  .c-top-ttl__right span {
+    width: 200px;
+  }
 }
 
 .c-bottom-ttl__right h2 {
@@ -204,6 +234,13 @@ body {
   text-align: right;
 }
 
+@media (min-width: 1025px) {
+  .c-bottom-ttl__right h2 {
+    padding: 70px 0;
+    font-size: 5.625rem;
+  }
+}
+
 .c-bottom-ttl__left h2 {
   padding: 40px 0;
   text-align: left;
@@ -213,6 +250,13 @@ body {
   font-weight: bold;
   font-size: 2.5rem;
   letter-spacing: 0.05em;
+}
+
+@media (min-width: 1025px) {
+  .c-bottom-ttl__left h2 {
+    padding: 70px 0;
+    font-size: 5.625rem;
+  }
 }
 
 .c-hamburger {
@@ -267,6 +311,12 @@ body {
           transform: rotate(-45deg);
 }
 
+@media (min-width: 1025px) {
+  .c-hamburger {
+    display: none;
+  }
+}
+
 .swiper-wrapper .swiper-slide {
   background-position: center center;
   background-size: cover;
@@ -277,11 +327,38 @@ body {
   backface-visibility: hidden;
 }
 
+@media (min-width: 1025px) {
+  .swiper-wrapper .swiper-slide {
+    height: 752px;
+  }
+}
+
 .p-header {
   width: 100%;
   position: absolute;
   padding-top: 30px;
   text-align: center;
+}
+
+@media (min-width: 1025px) {
+  .p-header {
+    padding-top: 19px;
+  }
+  .p-header__sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  .p-header__sticky.is-show {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .p-header__logo {
@@ -304,17 +381,43 @@ body {
   letter-spacing: 0.05em;
 }
 
-.p-header__logo__bgd {
-  width: 100%;
-  height: 96px;
-  background-color: #282F35;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 5;
+.p-header__logo__menu {
+  display: none;
 }
 
-.p-header h2 {
+@media (min-width: 1025px) {
+  .p-header__logo__menu {
+    display: block;
+  }
+  .p-header__logo__menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .p-header__logo__menu ul li {
+    list-style: none;
+    color: #ffffff;
+    font-family: 'Noto Serif';
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    margin-left: 30px;
+  }
+  .p-header__logo__menu ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+}
+
+@media (min-width: 1025px) {
+  .p-header__ttl {
+    margin-left: 120px;
+    text-align: left;
+  }
+}
+
+.p-header__ttl h2 {
   color: #ffffff;
   padding-top: 136px;
   font-family: 'Noto Serif';
@@ -323,7 +426,14 @@ body {
   letter-spacing: 0.05em;
 }
 
-.p-header h3 {
+@media (min-width: 1025px) {
+  .p-header__ttl h2 {
+    padding-top: 354px;
+    font-size: 4.375rem;
+  }
+}
+
+.p-header__ttl h3 {
   color: #ffffff;
   padding-top: 50px;
   font-family: 'Noto Serif JP';
@@ -333,8 +443,24 @@ body {
   line-height: 1.6;
 }
 
+@media (min-width: 1025px) {
+  .p-header__ttl h3 {
+    padding-top: 20px;
+    font-size: 2.5rem;
+  }
+  .p-header__ttl h3 br {
+    display: none;
+  }
+}
+
 .p-concept br {
   display: none;
+}
+
+@media (min-width: 1025px) {
+  .p-concept br {
+    display: block;
+  }
 }
 
 .p-concept h4 {
@@ -348,6 +474,21 @@ body {
   line-height: 1.5;
 }
 
+@media (min-width: 1025px) {
+  .p-concept h4 {
+    padding-top: 70px;
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .p-concept__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .p-concept p {
   padding-top: 30px;
   font-family: 'Noto Serif JP';
@@ -356,6 +497,18 @@ body {
   color: #171717;
   letter-spacing: 0.05em;
   line-height: 1.875;
+}
+
+@media (min-width: 1025px) {
+  .p-concept p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 60px;
+  }
 }
 
 .p-concept img {
@@ -368,6 +521,15 @@ body {
      object-position: 50% 100%;
 }
 
+@media (min-width: 1025px) {
+  .p-concept img {
+    margin-left: 120px;
+    padding-top: 60px;
+    width: 44%;
+    height: auto;
+  }
+}
+
 .p-works {
   background-image: url(/img/works-bgi@2x.jpg);
   background-position: center;
@@ -377,6 +539,15 @@ body {
 
 .p-works__cards {
   margin-top: 50px;
+}
+
+@media (min-width: 1025px) {
+  .p-works__cards {
+    margin-top: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .p-works a {
@@ -461,8 +632,22 @@ body {
   margin-top: 30px;
 }
 
+@media (min-width: 1025px) {
+  .p-contact a {
+    margin-top: 40px;
+  }
+}
+
 .p-service__contents {
   margin-top: 80px;
+}
+
+@media (min-width: 1025px) {
+  .p-service__contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .p-service__contents__img:first-child {
@@ -505,6 +690,7 @@ body {
 .p-service__contents__img:hover::after {
   content: '';
   background-color: rgba(23, 23, 23, 0.3);
+  background-size: 100%;
   position: absolute;
   left: 0;
   right: 0;
@@ -514,5 +700,17 @@ body {
 
 .u-margin {
   margin: 0 15px;
+}
+
+@media (min-width: 1025px) {
+  .u-margin {
+    margin: 0 120px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .u-margin-pc {
+    margin: 0 100px 0 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
