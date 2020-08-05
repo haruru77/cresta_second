@@ -1,0 +1,27 @@
+.c-card {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 0;
+    img {
+        display: inline-block;
+        width: 320px;
+        height: 200px;
+    }
+    p {
+        display: inline-block;
+        background-color: #ffffff;
+        padding: 25px 20px;
+        width: 320px;
+        height: 134px;
+        font-family: 'Noto Serif JP';
+        font-size: 1rem;
+        color: #141414;
+        letter-spacing: 0.05em;
+        line-height: 1.875;
+        text-align: left;
+    }
+}
+
+.c-card:last-child {
+    margin-bottom: 0;
+}

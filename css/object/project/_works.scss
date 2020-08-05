@@ -1,0 +1,12 @@
+.p-works {
+    background-image: url(/img/works-bgi@2x.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    &__cards {
+        margin-top: 50px;
+    }
+    a {
+        margin-top: 80px;
+    }
+}

@@ -1,0 +1,35 @@
+.p-hamburger {
+    position: absolute;
+    top: 0;
+    left: ０;
+    z-index: 10;
+    width: 100%;
+    background-color: #282F35;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    ul {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        li {
+            font-family: 'Noto Serif';
+            font-weight: bold;
+            font-style: italic;
+            font-size: 1rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 30px;
+            a {
+                text-decoration: none;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.p-hamburger.show {
+    opacity: 1;
+    visibility: visible;
+}
