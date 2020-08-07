@@ -1,0 +1,49 @@
+.p-top {
+    position: relative;
+    &__ttl {
+        position: absolute;
+        // top: 0;
+        // right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        margin: auto;
+        width: 100%;
+        z-index: 10;
+        text-align: center;
+        @include break($pc) {
+            width: auto;
+            margin: 0;
+            top: none;
+            transform: none;
+            left: 120px;
+            bottom: 117px;
+        }
+        h2 {
+            color: #ffffff;
+            font-family: 'Noto Serif';
+            font-weight: bold;
+            font-size: 2.3125rem;
+            letter-spacing: 0.05em;
+            @include break($pc) {
+                font-size: 4.375rem;
+            }
+        }
+        h3 {
+            color: #ffffff;
+            padding-top: 50px;
+            font-family: 'Noto Serif JP';
+            font-weight: bold;
+            font-size: 1.875rem;
+            letter-spacing: 0.05em;
+            line-height: 1.6;
+            @include break($pc) {
+                padding-top: 20px;
+                font-size: 2.5rem;
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}

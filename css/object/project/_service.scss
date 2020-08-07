@@ -1,26 +1,23 @@
 .p-service {
-    &__contents {
+    ul {
+        display: flex;
+        flex-direction: column;
         margin-top: 80px;
         @include break($pc) {
-            display: flex;
+            flex-direction: row;
         }
-        &__img:first-child {
-            background: url(/img/service-img01@2x.jpg) center center no-repeat;
-        }
-        &__img:nth-child(2) {
-            background: url(/img/service-img02@2x.jpg) center center no-repeat;
-        }
-        &__img:last-child {
-            background: url(/img/service-img03@2x.jpg) center center no-repeat;
-            margin-bottom: 0;
-        }
+    }
+    &__contents {
         &__img {
             margin-bottom: 30px;
             width: 100%;
-            padding-top: 66.66667%;
-            background-size: cover;
-            background-size: 100%;
+            height: ０;
+            padding-bottom: 66.66667%;
             position: relative;
+            background-size: contain;
+            @include break($pc) {
+                padding-bottom: 22.2222222%;
+            }
             p {
                 position: absolute;
                 top: 50%;
@@ -34,6 +31,19 @@
                 font-size: 1.25rem;
                 color: #ffffff;
                 letter-spacing: 0.1em;
+            }
+        }
+        &__img:first-child {
+            background: url(/img/service-img01@2x.jpg) center center no-repeat;
+        }
+        &__img:nth-child(2) {
+            background: url(/img/service-img02@2x.jpg) center center no-repeat;
+        }
+        &__img:last-child {
+            background: url(/img/service-img03@2x.jpg) center center no-repeat;
+            margin-bottom: 0;
+            @include break($pc) {
+                margin-bottom: 30px;
             }
         }
         &__img:hover::after {
