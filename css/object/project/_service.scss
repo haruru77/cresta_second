@@ -2,6 +2,7 @@
     ul {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         margin-top: 80px;
         @include break($pc) {
             flex-direction: row;
@@ -11,26 +12,32 @@
         &__img {
             margin-bottom: 30px;
             width: 100%;
-            height: ０;
-            padding-bottom: 66.66667%;
-            position: relative;
-            background-size: contain;
+            // height: 250px;
             @include break($pc) {
-                padding-bottom: 22.2222222%;
+                width: 33.333%;
+                // height: 320px;
             }
-            p {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                -webkit-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
+            a {
+                text-align: center;
+                line-height: 250px;
+                width: 100%;
+                display: block;
                 font-family: 'Noto Serif';
                 font-weight: bold;
                 font-style: italic;
                 font-size: 1.25rem;
                 color: #ffffff;
                 letter-spacing: 0.1em;
+                text-decoration: none;
+                transition: .3s;
+                @include break($pc) {
+                    line-height: 320px;
+                    font-size: 2.5rem;
+                }
+            }
+            a:hover {
+                transition: .3s;
+                background-color: rgba(23, 23, 23, .3);
             }
         }
         &__img:first-child {
@@ -45,16 +52,6 @@
             @include break($pc) {
                 margin-bottom: 30px;
             }
-        }
-        &__img:hover::after {
-            content: '';
-            background-color: rgba(23, 23, 23, .3);
-            background-size: 100%;
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
         }
     }
 }

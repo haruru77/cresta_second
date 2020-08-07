@@ -6,3 +6,9 @@ body {
     position: relative;
     height: 100%;
 }
+
+html.is-fixed,
+html.is-fixed body {
+    height: 100%;
+    overflow: hidden;
+}

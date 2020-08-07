@@ -1,6 +1,6 @@
 $sm: 576px;
 $tb: 768px;
-$pc: 641px;
+$pc: 769px;
 @mixin break($breakPoint) {
     @media (min-width: ($breakPoint)) {
         @content;
