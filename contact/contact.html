@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=“https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+JP&display=swap” rel=“stylesheet”>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type=”text/javascript” src="../js/script.js"></script>
+    <title>Cresta Design お問い合わせ</title>
+</head>
+
+<body>
+    <header class="l-header">
+        <div class="c-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="p-header">
+            <div class="u-margin">
+                <div class="p-header__logo">
+                    <a href="../#">
+                        <h1>Cresta Design</h1>
+                    </a>
+                    <div class="p-header__logo__menu">
+                        <ul>
+                            <li><a href="../index.html#concept">Concept</a></li>
+                            <li><a href="../index.html#works">Works</a></li>
+                            <li><a href="../index.html#service">Service</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="p-hamburger">
+        <div class="u-margin">
+            <ul class="p-hamburger__menu">
+                <li><a href="../index.html#concept">Concept</a></li>
+                <li><a href="../index.html#works">Works</a></li>
+                <li><a href="../index.html#service">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="p-contact__page">
+            <div class="u-margin">
+                <div class="p-contact__page__top">
+                    <div class="c-top-ttl__contact">
+                        <h3>Contact</h3>
+                    </div>
+                    <div class="c-bottom-ttl__contact">
+                        <h2>Contact us</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="p-contact__page__form">
+            <div class="u-margin">
+                <form action="post">
+                    <p>お問い合わせ内容</p>
+                    <input id="check-a" type="checkbox" name="content" value="資料請求"><label class="check" for="check-a">資料請求</label><br class="p-contact__page__form__pc">
+                    <input id="check-b" type="checkbox" name="content" value="電話"><label class="check" for="check-b">お電話でのご相談を希望</label><br class="p-contact__page__form__pc">
+                    <input id="check-c" type="checkbox" name="content" value="申し込み"><label class="check" for="check-c">申し込み</label><br>
+                    <label for="name">担当者名</label><br>
+                    <input type="text" name="name" id="name"><br>
+                    <label for="tel">電話番号</label><br>
+                    <input type="tel" name="tel" id="tel"><br>
+                    <label for="mail">メールアドレス</label><br>
+                    <input type="email" name="mail" id="mail"><br>
+                    <label for="message">その他</label><br>
+                    <textarea name="message" id="" cols="30" rows="5"></textarea><br>
+                    <input type="submit" class="c-btn" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="l-footer">
+        <address class="copyright">©︎cresta.design all rights reserved</address>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

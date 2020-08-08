@@ -246,6 +246,23 @@ html.is-fixed body {
   }
 }
 
+.c-top-ttl__contact h3 {
+  display: inline-block;
+  padding-top: 173px;
+  font-family: 'Noto Serif';
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.875rem;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 769px) {
+  .c-top-ttl__contact h3 {
+    font-size: 3.75rem;
+  }
+}
+
 .c-bottom-ttl__right {
   max-width: 1200px;
   text-align: right;
@@ -288,6 +305,28 @@ html.is-fixed body {
 @media (min-width: 769px) {
   .c-bottom-ttl__left h2 {
     padding: 70px 0;
+    font-size: 5.625rem;
+  }
+}
+
+.c-bottom-ttl__contact {
+  margin: 0 auto;
+}
+
+.c-bottom-ttl__contact h2 {
+  padding: 40px 0;
+  text-align: left;
+  color: #FFFFFF;
+  opacity: 0.1;
+  font-family: 'Noto Serif';
+  font-weight: bold;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 769px) {
+  .c-bottom-ttl__contact h2 {
+    padding: 15px 0 0 28px;
     font-size: 5.625rem;
   }
 }
@@ -711,6 +750,71 @@ html.is-fixed body {
 @media (min-width: 769px) {
   .p-contact a {
     margin-top: 40px;
+  }
+}
+
+.p-contact__page {
+  background-image: url(/img/contact-page-bgi@2x.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 360px;
+}
+
+@media (min-width: 769px) {
+  .p-contact__page {
+    height: 453px;
+  }
+}
+
+.p-contact__page__form * {
+  font-family: 'Noto Serif JP';
+  letter-spacing: 0.05em;
+}
+
+.p-contact__page__form form {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.p-contact__page__form p {
+  padding-top: 100px;
+}
+
+.p-contact__page__form input:not([type="checkbox"]) {
+  display: block;
+  width: 100%;
+  padding: 6px;
+}
+
+.p-contact__page__form textarea {
+  width: 100%;
+  padding: 6px;
+}
+
+.p-contact__page__form label:not(.check) {
+  margin-top: 25px;
+  display: inline-block;
+}
+
+.p-contact__page__form input[type="submit"] {
+  margin: 80px auto;
+  width: 245px;
+  cursor: pointer;
+}
+
+.p-contact__page__form label.check {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.p-contact__page__form input[type="checkbox"] {
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .p-contact__page__form__pc {
+    display: none;
   }
 }
 

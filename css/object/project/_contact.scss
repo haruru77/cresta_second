@@ -18,4 +18,57 @@
             margin-top: 40px;
         }
     }
+    &__page {
+        background-image: url(/img/contact-page-bgi@2x.jpg);
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        height: 360px;
+        @include break($pc) {
+            height: 453px;
+        }
+        &__form {
+            * {
+                font-family: 'Noto Serif JP';
+                letter-spacing: 0.05em;
+            }
+            form {
+                margin: 0 auto;
+                max-width: 700px;
+            }
+            p {
+                padding-top: 100px;
+            }
+            input:not([type="checkbox"]) {
+                display: block;
+                width: 100%;
+                padding: 6px;
+            }
+            textarea {
+                width: 100%;
+                padding: 6px;
+            }
+            label:not(.check) {
+                margin-top: 25px;
+                display: inline-block;
+            }
+            input[type="submit"] {
+                margin: 80px auto;
+                width: 245px;
+                cursor: pointer;
+            }
+            label.check {
+                padding-right: 20px;
+                cursor: pointer;
+            }
+            input[type="checkbox"] {
+                cursor: pointer;
+            }
+            &__pc {
+                @include break($pc) {
+                    display: none;
+                }
+            }
+        }
+    }
 }
