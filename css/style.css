@@ -645,7 +645,7 @@ html.is-fixed body {
 }
 
 .p-works {
-  background-image: url(./img/works-bgi@2x.jpg);
+  background-image: url(../img/works-bgi@2x.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -727,7 +727,7 @@ html.is-fixed body {
 }
 
 .p-contact {
-  background-image: url(./img/contact-bgi@2x.jpg);
+  background-image: url(../img/contact-bgi@2x.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -754,7 +754,7 @@ html.is-fixed body {
 }
 
 .p-contact__page {
-  background-image: url(./img/contact-page-bgi@2x.jpg);
+  background-image: url(../img/contact-page-bgi@2x.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -882,15 +882,15 @@ html.is-fixed body {
 }
 
 .p-service__contents__img:first-child {
-  background: url(./img/service-img01@2x.jpg) center center no-repeat;
+  background: url(../img/service-img01@2x.jpg) center center no-repeat;
 }
 
 .p-service__contents__img:nth-child(2) {
-  background: url(./img/service-img02@2x.jpg) center center no-repeat;
+  background: url(../img/service-img02@2x.jpg) center center no-repeat;
 }
 
 .p-service__contents__img:last-child {
-  background: url(./img/service-img03@2x.jpg) center center no-repeat;
+  background: url(../img/service-img03@2x.jpg) center center no-repeat;
   margin-bottom: 0;
 }
 
