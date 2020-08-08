@@ -800,6 +800,7 @@ html.is-fixed body {
 .p-contact__page__form input[type="submit"] {
   margin: 80px auto;
   width: 245px;
+  line-height: normal;
   cursor: pointer;
 }
 
