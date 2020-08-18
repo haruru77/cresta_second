@@ -844,7 +844,7 @@ html.is-fixed body {
 
 .p-service__contents__img {
   margin-bottom: 30px;
-  width: 100%;
+  max-width: 100%;
 }
 
 @media (min-width: 769px) {
@@ -856,7 +856,8 @@ html.is-fixed body {
 .p-service__contents__img a {
   text-align: center;
   line-height: 250px;
-  width: 100%;
+  margin: 0 auto;
+  max-width: 480px;
   display: block;
   font-family: 'Noto Serif';
   font-weight: bold;
@@ -871,6 +872,8 @@ html.is-fixed body {
 
 @media (min-width: 769px) {
   .p-service__contents__img a {
+    margin: 0 auto;
+    max-width: 480px;
     line-height: 320px;
     font-size: 2.5rem;
   }

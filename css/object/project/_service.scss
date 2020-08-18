@@ -11,7 +11,7 @@
     &__contents {
         &__img {
             margin-bottom: 30px;
-            width: 100%;
+            max-width: 100%;
             // height: 250px;
             @include break($pc) {
                 width: 33.333%;
@@ -20,7 +20,8 @@
             a {
                 text-align: center;
                 line-height: 250px;
-                width: 100%;
+                margin: 0 auto;
+                max-width: 480px;
                 display: block;
                 font-family: 'Noto Serif';
                 font-weight: bold;
@@ -31,6 +32,8 @@
                 text-decoration: none;
                 transition: .3s;
                 @include break($pc) {
+                    margin: 0 auto;
+                    max-width: 480px;
                     line-height: 320px;
                     font-size: 2.5rem;
                 }
